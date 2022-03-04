@@ -8,7 +8,23 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 </head>
 <body>
-    <h1>Hi!, Abril</h1>
-    <h2>How's it going? &#128516</h2>
+    <h1>MERCADO LIBRE</h1>
+    <h2>Bienvenido</h2>
+    <form class="form">
+        <br><br>
+         <label for="Usuario"> Usuario: </label>
+         <input type="text" name="Usuario" id="Usuario" placeholder="Ingrese Usuario" required>
+                    <br><br>
+                    <label for="password"> Contraseña: </label>
+                    <input type="password" name="Contraseña" id="Contraseña" placeholder="Ingrese Contraseña" required>
+         </form>
+        
+         <div>
+            <a  class="button-1" href="/Menu" target="btn1">INICIO</a>
+           
+        </div>
+        <div>
+             <a  class="button-2" href="/Registro" target="btn2">REGISTRO</a>
+        </div>
 </body>
 </html>

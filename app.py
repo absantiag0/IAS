@@ -14,6 +14,7 @@ app = Flask(__name__)
 
 # settings
 app.secret_key = 'mysecretkey'
+
 @app.route('/')
 def Index():
 #   try:
@@ -26,7 +27,15 @@ def Index():
 #     return render_template('index.html')
 #     return render_template('index.html',usuarios = data)
 
+@app.route('/Registro',methods=['GET'])
+def Registro():
+    return render_template('Registro.html')
+    
+@app.route('/Menu',methods=['GET'])
+def Menu():
+    return render_template('Menu.html')
 
 
 if __name__=='__main__':
     app.run(port = 4000, debug =True)
+    
