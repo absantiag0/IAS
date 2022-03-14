@@ -5,34 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <link href="//db.onlinewebfonts.com/c/69f1400361a215519d385199118a34aa?family=Harabara" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="{{url_for('static', filename='css/Registro.css')}}">
-
 </head>
 <body>
-    <h1>MERCADO LIBRE</h1>
-    <H2>Bienvenido</H2>
-
-<form class="form">
-    
-     <label for="Nombre"> Nombre: </label>
-     <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese Nombre" required>
-     
-     <label for="Apellidos"> Apellidos: </label>
-     <input type="text" name="Apellidos" id="Apellidos" placeholder="Ingrese Apellidos" required>      
-     
-     <label for="Proceso"> Proceso: </label>
-     <input type="text" name="text" id="text" placeholder="Ingrese Proceso" required>   
-     
-     <label for="Usuario"> Usuario: </label>
-     <input type="text" name="text" id="text" placeholder="Ingrese Usuario" required>   
-     
-    <label for="password"> Contraseña: </label>
-    <input type="password" name="Contraseña" id="Contraseña" placeholder="Ingrese Contraseña" required>
-     </form>
-    
-     <div>
-        <a  class="button-1" href="/" target="btn1">REGISTRAR</a>
-       
+    <div class="nav">
+        <div class="titulo">
+            <h1>MERCADO LIBRE</h1>
+        </div>
+        <div class="bar_nav">
+            <H2>Bienvenido</H2>
+        </div>
     </div>
+<div class="container_form">
+    <form action="/Menu" method="get" class="form">
+        <label for="Nombre"> Nombre: </label>
+        <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese Nombre" required>
+        <label for="Apellidos"> Apellidos: </label>
+        <input type="text" name="Apellidos" id="Apellidos" placeholder="Ingrese Apellidos" required>      
+        <label for="Proceso"> Proceso: </label>
+        <input type="text" name="text" id="text" placeholder="Ingrese Proceso" required>   
+        <label for="Usuario"> Usuario: </label>
+        <input type="text" name="text" id="text" placeholder="Ingrese Usuario" required>   
+        <label for="password"> Contraseña: </label>
+        <input type="password" name="Contraseña" id="Contraseña" placeholder="Ingrese Contraseña" required>
+        <input type="submit" class="button-1" value="Registrar">
+    </form>
+</div>   
 </body>
 </html>

@@ -35,6 +35,10 @@ def Registro():
 def Menu():
     return render_template('Menu.html')
 
+@app.route('/salir',methods=['GET'])
+def salir():
+    return redirect('/')
+
 
 if __name__=='__main__':
     app.run(port = 4000, debug =True)
